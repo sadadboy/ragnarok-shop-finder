@@ -1,0 +1,106 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #4a5568;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* 검색 폼 */
+.search-form {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* 아이템 목록 */
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.item-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-card h3 {
+    margin-top: 0;
+    color: #2d3748;
+}
+
+.item-price {
+    color: #e53e3e;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item-vendor {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* 노점 상세 정보 */
+.shop-detail {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.shop-location {
+    color: #718096;
+    font-style: italic;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .item-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-form input {
+        width: 200px;
+    }
+}
